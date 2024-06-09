@@ -1,0 +1,356 @@
+:root {
+  --white: #fff;
+  --light: #ededf4;
+  --black: #000;
+  --dark: #353131;
+  --purple: #a70083;
+  --blue: #406fe7;
+  --rose: #c98686;
+  --pink: #f91562;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  color: var(--black);
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  height: 96px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--teal);
+  color: var(--purple);
+  border-bottom: 0.1rem solid var(--rose);
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  width: auto;
+  height: 96px;
+}
+
+.title {
+  font-size: 3.2rem;
+  margin-left: 20px;
+  font-family: "Pacifico", cursive;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+.navbar_links__link {
+  color: var(--purple);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+  margin-right: 2rem;
+}
+
+.navbar_links__link:hover {
+  color: var(--pink);
+}
+
+.navbar__btn {
+  font-size: 2.4rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem 2rem;
+  background-color: var(--pink);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Navabar ends */
+
+.main {
+  background: var(--white);
+  height: 50%;
+}
+
+.map,
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map {
+  height: 90vh;
+  width: 80%;
+}
+
+.aside {
+  width: 20%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: #f7f7f7;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.route {
+  font-size: 2.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-top: 20px;
+  background-color: var(--white);
+  color: var(--pink);
+  border-radius: 24px;
+  width: 90%;
+  padding: 12px;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  margin-top: 96px;
+  padding-left: 52px;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232ad27a' fill-opacity='0.55'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+  color: var(--dark);
+}
+
+.hero__title,
+.contact__title {
+  width: 50%;
+  font-size: 9.6rem;
+  font-family: "Roboto Condensed", cursive;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero__title span {
+  color: var(--blue);
+}
+
+.hero__mockup {
+  background: url("https://i.imgur.com/vIdSYGa.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 0;
+  width: 350px;
+  height: 600px;
+  margin-right: 28px;
+  margin-top: 40px;
+}
+
+.hero__text,
+.wrapper {
+  font-size: 2.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-top: 40px;
+  /* margin-left: 52px; */
+}
+
+.hero__btn {
+  font-size: 2.4rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem 2rem;
+  margin-top: 32px;
+  margin-left: 104px;
+  background-color: var(--pink);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #CA5B85;
+  border-radius: 8px;
+  margin-top: 250px;
+}
+
+.contact__title {
+  font-size: 9.6rem;
+  font-family: "Roboto Condensed", cursive;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  text-align: center;
+}
+
+.contact__wrapper {
+  font-size: 2.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-left: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.contact__btn {
+  font-size: 2.4rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem 2rem;
+  background-color:#F91562;
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.contact__btn a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.searchBar {
+  position: absolute;
+  z-index: 1001;
+  top: 120px;
+  width: 50%;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20%;
+  border-radius: 8px;
+  background-color: var(--white);
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  text-align: center;
+}
+
+/* Login */
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 450px;
+  width: 50%;
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 24px;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 120px;
+}
+
+.login__title {
+  font-size: 3.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.login__text {
+  font-size: 2.4rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+
+.login__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 80%;
+  background-color: var(--white);
+  margin-bottom: 32px;
+  border-radius: 8px;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25);
+}
+.login__input {
+  font-size: 2.4rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem 2rem;
+  background-color: var(--white);
+  color: var(--dark);
+  border: 2px solid var(--dark);
+  border-radius: 8px;
+  margin-top: 16px;
+  width: 80%;
+}
+
+.login__btn {
+  font-size: 2.4rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem 2rem;
+  background-color: var(--pink);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.signup__text {
+  font-size: 2.4rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.signup__text a {
+  width: 100%;
+  text-align: center;
+  color: yellow;
+  text-decoration: none;
+}
