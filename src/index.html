@@ -53,12 +53,27 @@
     <header class="header">
       <img class="top__img" src="https://i.imgur.com/fXKHNeS.png" alt="logo" />
       <h1 class="top__title">Tianquiztli</h1>
-      <a href="www.google.com"><i class="fa-solid fa-bars" title="menu"></i></a>
+      <i class="fa-solid fa-bars" title="menu" id="openModal"></i>
     </header>
     <main class="main">
-      <input class="search" type="text" placeholder="search" id="searchBar" />
+      <!-- <input class="search" type="text" placeholder="Buscar" id="searchBar" /> -->
       <section class="section map" id="map"></section>
-      <section class="section tags">
+      <section class="section modal" id="modal">
+        <div class="modal__content">
+          <div class="modal__header">
+            <h2 class="modal__title">Menú</h2>
+            <i class="fa-solid fa-times fa-xl" title="cerrar" id="closeModal"></i>
+          </div>
+          <ul class="modal__list" id="modal__list">
+            <!-- <li class="modal__item">Inicio</li>
+            <li class="modal__item">Tianguis</li>
+            <li class="modal__item">Rutas</li>
+            <li class="modal__item">Contacto</li> -->
+          </ul>
+        </div>
+      </section>
+      <!-- <button type="button"></button> -->
+      <!-- <section class="section tags">
         <h2 class="section__title">Etiquetas</h2>
         <ul class="tags__list">
           <li class="tags__item vegetables">🥕 Verduras</li>
@@ -67,8 +82,8 @@
       </section>
       <section class="section routes">
         <h2 class="section__title routes__title">Tianguis Recomendados</h2>
-        <ul class="routes__list" id="recommendedRoutes">
-          <!-- <li class="routes__item">
+        <ul class="routes__list" id="recommendedRoutes"> -->
+      <!-- <li class="routes__item">
             <span class="routes__name">Ruta 1 nombre largo mas largo mas largo</span>
             <img
               class="routes__item-img"
@@ -80,10 +95,10 @@
               <span>$</span>
             </div>
           </li> -->
-        </ul>
-      </section>
+      <!-- </ul>
+      </section> -->
     </main>
-    <footer class="footer"><div id="ads">ads bar</div></footer>
+    <!-- <footer class="footer"><div id="ads">ads bar</div></footer> -->
     <script
       src="https://kit.fontawesome.com/8aeb1532d4.js"
       crossorigin="anonymous"
